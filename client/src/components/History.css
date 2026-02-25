@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Outfit:wght@400;600;700&display=swap");
+
+/* ===== Page Layout ===== */
+.history-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3e8ff, #fdf2f8, #e0f2fe);
+  padding: 50px 80px;
+  font-family: "Outfit", sans-serif;
+}
+
+/* ===== Centered Gradient Heading ===== */
+.history-title {
+  font-family: "Pacifico", cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 15px;
+
+  background: linear-gradient(90deg, #8b5cf6, #ec4899, #6366f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 2px;
+}
+
+/* Emoji should NOT inherit gradient */
+.history-emoji {
+  background: none;
+  -webkit-text-fill-color: initial;
+  color: initial;
+  margin-right: 15px;
+}
+
+
+
+/* ===== Incident Count ===== */
+.history-count {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* ===== Card Container ===== */
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ===== Glass Effect Card ===== */
+.history-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 25px 30px;
+  border-radius: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Hover Glow */
+.history-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(139, 92, 246, 0.25);
+}
+
+/* Card Text */
+.history-card p {
+  margin: 8px 0;
+  font-size: 1.05rem;
+}
+
+/* ===== Empty State ===== */
+.no-data {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* ===== Top Toggles ===== */
+.top-toggle-container-left {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.toggle-nav-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: white;
+  color: #333;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.toggle-nav-btn:hover {
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  color: white;
+  transform: translateY(-3px);
+}

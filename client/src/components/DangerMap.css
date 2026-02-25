@@ -1,0 +1,34 @@
+/* DangerMap.css */
+
+/* Wrapper for the map */
+.map-wrapper {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Emoji marker styling */
+.emoji-marker {
+  text-align: center;
+  line-height: 1;
+}
+
+/* Optional: style for popup content */
+.leaflet-popup-content {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.custom-emoji-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.emoji-marker {
+  text-align: center;
+  transform: translateY(-5px);
+  user-select: none;
+}
+

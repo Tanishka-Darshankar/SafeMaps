@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fdf6f0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background-color: #fff;
+  width: 350px;
+  text-align: center;
+}
+
+.login-heading {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #c36cc7;
+}
+
+.login-input {
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.login-button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ded469, #ed6c70);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.register-link {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.register-link span {
+  color: #ff5f7d;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}

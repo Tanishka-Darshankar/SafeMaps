@@ -1,0 +1,241 @@
+/* ====== Aesthetic Dashboard Page Styling ====== */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500;600&family=Outfit:wght@400;600&display=swap");
+
+.dashboard-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(120deg, #ffe6eb, #fff0f5, #e3f2fd);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+  font-family: "Outfit", sans-serif;
+}
+
+/* ====== TOP LEFT TOGGLES ====== */
+.top-toggle-container-left {
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+
+.toggle-nav-btn {
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  color: #444;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.toggle-nav-btn:hover {
+  background: linear-gradient(135deg, #ff758c, #7b2ff7);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ====== Main Heading (Pacifico + Gradient) ====== */
+.dashboard-heading {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 40px;
+}
+
+/* Emoji stays normal */
+.heading-emoji {
+  margin-right: 15px;
+  font-size: 3.2rem;
+}
+
+/* Gradient only applied to text */
+.heading-text {
+  font-family: "Pacifico", cursive;
+
+  background: linear-gradient(90deg, #8b5cf6, #ec4899, #6366f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 2px;
+}
+
+/* ====== Split Layout ====== */
+.dashboard-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ====== Glass Panels ====== */
+.left-panel,
+.right-panel {
+  flex: 1;
+  padding: 35px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s ease;
+
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(18px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  box-shadow:
+    0 8px 32px rgba(31, 38, 135, 0.15),
+    inset 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.left-panel:hover,
+.right-panel:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 15px 40px rgba(31, 38, 135, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Section Titles */
+.section-heading {
+  text-align: center;
+  font-family: "Poppins", sans-serif;  /* ✅ Same font */
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+
+  background: linear-gradient(90deg, #f48405, #0981f1);
+
+  background-clip: text;              /* ✅ Standard */
+  -webkit-background-clip: text;      /* ✅ Safari */
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* ====== Map Box ====== */
+.map-box {
+  flex: 1;
+  height: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* ====== Inputs ====== */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  margin-bottom: 18px;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.3);
+}
+
+/* ====== Emoji Category Buttons ====== */
+.category-btn {
+  border-radius: 16px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.category-btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #ec7ae5, #cbe06f);
+  color: white;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 992px) {
+  .dashboard-container {
+    padding: 30px;
+  }
+
+  .dashboard-sections {
+    flex-direction: column;
+    gap: 30px;
+    width: 95%;
+  }
+
+  .dashboard-heading {
+    font-size: 2.8rem;
+  }
+
+  .top-toggle-container-left {
+    position: static;
+    margin-bottom: 20px;
+  }
+}
+
+/* Header Wrapper */
+.dashboard-header {
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* Live Badge */
+.live-badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: rgba(255, 0, 0, 0.1);
+  color: #d90429;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+/* Heading Emoji spacing */
+.heading-emoji {
+  margin-right: 12px;
+}
+
+/* Section heading emoji alignment */
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

@@ -1,0 +1,34 @@
+.dashboard-stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.stat-card h4 {
+  font-size: 16px;
+  color: #555;
+}
+
+.stat-card p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.dashboard-stats-loading {
+  font-size: 14px;
+  color: #666;
+  padding: 10px 0;
+}

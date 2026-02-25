@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Outfit:wght@400;600;700&display=swap");
+
+/* ===== Page Background ===== */
+.route-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3e8ff, #fdf2f8, #e0f2fe);
+  padding: 50px 80px;
+  font-family: "Outfit", sans-serif;
+}
+
+/* ===== Heading ===== */
+.route-title {
+  font-family: "Pacifico", cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 40px;
+
+  background: linear-gradient(90deg, #8b5cf6, #ec4899, #6366f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 2px;
+}
+
+/* Fix emoji rendering */
+.route-emoji {
+  background: none;
+  -webkit-text-fill-color: initial;
+  color: initial;
+  margin-right: 15px;
+}
+
+
+/* ===== Layout ===== */
+.route-layout {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* ===== Glass Form Card ===== */
+.route-form-card {
+  flex: 1;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  transition: all 0.3s ease;
+}
+
+.route-form-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(139, 92, 246, 0.25);
+}
+
+/* ===== Inputs ===== */
+.route-form-card input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+.route-form-card input:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.3);
+}
+
+/* ===== Button ===== */
+.show-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+
+  background: linear-gradient(90deg, #ec4899, #8b5cf6);
+  color: white;
+
+  transition: all 0.3s ease;
+}
+
+.show-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
+}
+
+/* ===== Glass Map Wrapper ===== */
+.route-map-wrapper {
+  flex: 2;
+  border-radius: 25px;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  transition: all 0.3s ease;
+}
+
+.route-map-wrapper:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(139, 92, 246, 0.25);
+}
+
+/* ===== Safe / Danger Boxes ===== */
+.safe-box {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(34, 197, 94, 0.15);
+  color: #166534;
+  font-weight: 600;
+}
+
+.danger-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(239, 68, 68, 0.15);
+  color: #7f1d1d;
+}

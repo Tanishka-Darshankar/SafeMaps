@@ -1,0 +1,142 @@
+/* Import fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Raleway:wght@500;600;700&display=swap');
+
+/* Page background */
+.danger-page {
+  background: linear-gradient(to bottom right, #fff5f7, #fceaff);
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: "Raleway", sans-serif; /* default body font */
+  color: #333;
+}
+
+/* Main report heading */
+.report-heading {
+  font-family: 'Lora', serif !important;
+  font-weight: 700 !important;
+  font-size: 1.6rem !important;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #222;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+  letter-spacing: 0.5px;
+}
+
+/* Map heading */
+.map-heading {
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #222;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+  letter-spacing: 0.3px;
+}
+
+/* Category grid */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Category items */
+.category-item {
+  text-align: center;
+  background: #ffffff;
+  padding: 0.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.category-item:hover {
+  transform: translateY(-2px);
+  border-color: #ffb6c1;
+}
+
+.category-item.selected {
+  border-color: #ff7eb3;
+  box-shadow: 0 0 10px rgba(255, 120, 150, 0.4);
+}
+
+/* Category emoji */
+.emoji {
+  font-size: 2rem;
+}
+
+/* Category name text */
+/* Category name text */
+.category-item p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #000; /* Keep it black */
+  margin-top: 0.3rem;
+  transition: color 0.3s ease;
+}
+
+.category-item:hover p,
+.category-item.selected p {
+  color: #000; /* Keep black even on hover/selected */
+}
+
+
+/* Input group */
+.input-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  outline: none;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+textarea {
+  resize: none;
+  margin-bottom: 1rem;
+}
+
+/* Submit button */
+.submit-btn {
+  background: linear-gradient(45deg, #ff758c, #ff7eb3);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+}
+
+/* Right Section - Map */
+.map-section {
+  background: white;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Map wrapper */
+.map-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
