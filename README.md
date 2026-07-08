@@ -1,4 +1,4 @@
-# SafeMaps – Women Safety Mapping App 🗺️🚨
+# SafeMaps – Intelligent Safety Mapping & Route Analysis Platform
 
 > *"Safety begins with awareness and action."*
 
